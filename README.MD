@@ -40,3 +40,8 @@ WHERE `level` LIKE 'magistrale';
 
 SELECT COUNT(*)
 FROM `departments`;
+
+###  ottava
+SELECT COUNT(*)
+FROM `teachers`
+WHERE `phone` IS NULL;
