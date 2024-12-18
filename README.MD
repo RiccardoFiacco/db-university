@@ -54,3 +54,8 @@ VALUES (61, 'riccardo', 'fiacco', '2000-12-17', '0487523YBF402534', '2019-09-21'
 UPDATE `teachers`
 SET `office_address` = "126"
 WHERE `name` LIKE "Pietro" AND `surname` LIKE "Rizzo"
+
+### undicesima
+DELETE
+FROM `students`
+WHERE `fiscal_code` LIKE '0487523YBF402534'
