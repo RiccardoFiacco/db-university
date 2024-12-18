@@ -16,3 +16,9 @@ WHERE `cfu` > 10;
 SELECT *
 FROM `students`
 WHERE `date_of_birth` > "1994-01-01"
+
+### quarta 
+SELECT *
+FROM `courses`
+WHERE `period` LIKE 'I semestre' 
+AND `year` = 1 
