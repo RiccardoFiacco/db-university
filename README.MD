@@ -9,3 +9,10 @@ WHERE `date_of_birth` LIKE '1990-%-%';
 SELECT *
 FROM `courses`
 WHERE `cfu` > 10;
+
+### terza query
+
+
+SELECT *
+FROM `students`
+WHERE `date_of_birth` > "1994-01-01"
