@@ -45,3 +45,7 @@ FROM `departments`;
 SELECT COUNT(*)
 FROM `teachers`
 WHERE `phone` IS NULL;
+
+### nona
+INSERT INTO `students` (`degree_id`, `name`, `surname`, `date_of_birth`, `fiscal_code`, `enrolment_date`, `registration_number`, `email`)
+VALUES (61, 'riccardo', 'fiacco', '2000-12-17', '0487523YBF402534', '2019-09-21', '6', 'rf@gmail.it')
