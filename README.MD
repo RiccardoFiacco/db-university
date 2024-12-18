@@ -35,3 +35,8 @@ AND `hour` > '14:00:00';
 SELECT *
 FROM `degrees`
 WHERE `level` LIKE 'magistrale';
+
+### settima
+
+SELECT COUNT(*)
+FROM `departments`;
