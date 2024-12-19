@@ -70,3 +70,8 @@ GROUP BY `enrolment_date`
 SELECT COUNT(*) as "insegnanti", `office_number` as "numero ufficio"
 FROM `teachers`
 GROUP BY `office_number`
+
+### terza
+SELECT AVG(`vote`) as "media", `exam_id` as 'esame'
+FROM `exam_student`
+group by `exam_id`
