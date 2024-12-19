@@ -13,9 +13,9 @@ WHERE `cfu` > 10;
 ### terza query
 
 
-SELECT *
+SELECT *, TIMESTAMPDIFF(YEAR, `date-of-birth`, CURRDATE())
 FROM `students`
-WHERE `date_of_birth` > "1994-01-01"
+WHERE TIMESTAMPDIFF(YEAR, `date-of-birth`, CURRDATE())>30
 
 ### quarta 
 SELECT *
