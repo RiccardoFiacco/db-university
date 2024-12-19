@@ -82,3 +82,11 @@ FROM `courses` AS `C`
 JOIN `degrees` AS `D`
 ON `C`.`degree_id` = `D`.`id`
 GROUP BY `D`.`department_id`
+
+### QUERY JOIN
+### prima
+SELECT `S`.`name`, `S`.`surname`, `D`.`name`
+FROM `students` AS `S`
+JOIN `degrees` AS `D`
+ON `S`.`degree_id` = `D`.`id`
+WHERE `D`.`name` LIKE 'Corso di Laurea in Economia'
