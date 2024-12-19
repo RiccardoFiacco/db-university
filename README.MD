@@ -108,3 +108,12 @@ ON `C`.`id` = `CT`.`course_id`
 JOIN `teachers` AS `T`
 ON `CT`.`teacher_id` = `T`.`id`
 WHERE `T`.`id` = 44
+
+### quarta
+SELECT `S`.*,`D`.name, `DE`.name
+FROM `students` AS `S`
+JOIN `degrees` AS `D`
+ON `S`.`degree_id` = `D`.`id`
+JOIN `departments` AS `DE`
+ON `D`.`department_id` = `DE`.`id`
+ORDER BY `S`.`surname` ASC, `S`.`name`
