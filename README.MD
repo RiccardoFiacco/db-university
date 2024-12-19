@@ -65,3 +65,8 @@ WHERE `fiscal_code` LIKE '0487523YBF402534'
 SELECT COUNT(*) as "numero ", `enrolment_date` as "data"
 FROM `students`
 GROUP BY `enrolment_date`
+
+### seconda
+SELECT COUNT(*) as "insegnanti", `office_number` as "numero ufficio"
+FROM `teachers`
+GROUP BY `office_number`
