@@ -90,3 +90,12 @@ FROM `students` AS `S`
 JOIN `degrees` AS `D`
 ON `S`.`degree_id` = `D`.`id`
 WHERE `D`.`name` LIKE 'Corso di Laurea in Economia'
+
+### seconda
+SELECT *
+FROM `courses` AS `C`
+JOIN `degrees` AS `D`
+ON `C`.`degree_id` = `D`.`id`
+JOIN `departments` AS `DE`
+ON `D`.`department_id` = `DE`.`ID`
+WHERE `D`.`level` LIKE 'magistrale' AND `DE`.`name` LIKE "Dipartimento di Neuroscienze"
