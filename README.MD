@@ -127,3 +127,16 @@ JOIN `course_teacher` AS `CT`
 ON `C`.`id` = `CT`.`course_id`
 JOIN `teachers` AS `T`
 ON `CT`.`teacher_id`=`T`.`id`  
+
+### sesta
+SELECT DISTINCT COUNT(*)
+FROM `teachers` AS `T`
+JOIN `course_teacher` AS `CT`
+ON `T`.`id` = `CT`.`teacher_id`
+JOIN `courses` AS `C`
+ON `CT`.`course_id` = `C`.`id`
+JOIN `degrees` AS `D`
+ON `C`.`degree_id` = `D`.`id`
+JOIN `departments` AS `DE`
+ON `D`.`department_id` = `DE`.`id`
+WHERE `DE`.`name` LIKE "Dipartimento di Matematica"
