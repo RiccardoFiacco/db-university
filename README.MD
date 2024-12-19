@@ -59,3 +59,9 @@ WHERE `name` LIKE "Pietro" AND `surname` LIKE "Rizzo"
 DELETE
 FROM `students`
 WHERE `fiscal_code` LIKE '0487523YBF402534'
+
+### QUERY GROUP BY
+### prima
+SELECT COUNT(*) as "numero ", `enrolment_date` as "data"
+FROM `students`
+GROUP BY `enrolment_date`
