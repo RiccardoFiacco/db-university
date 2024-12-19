@@ -75,3 +75,10 @@ GROUP BY `office_number`
 SELECT AVG(`vote`) as "media", `exam_id` as 'esame'
 FROM `exam_student`
 group by `exam_id`
+
+### quarta
+SELECT COUNT(*) as "totale corsi", `department_id` as "id dipartimento"
+FROM `courses` AS `C`
+JOIN `degrees` AS `D`
+ON `C`.`degree_id` = `D`.`id`
+GROUP BY `D`.`department_id`
