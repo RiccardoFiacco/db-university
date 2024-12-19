@@ -117,3 +117,13 @@ ON `S`.`degree_id` = `D`.`id`
 JOIN `departments` AS `DE`
 ON `D`.`department_id` = `DE`.`id`
 ORDER BY `S`.`surname` ASC, `S`.`name`
+
+### quinto
+SELECT `D`.`name`, `C`.*, `T`.*
+FROM `degrees` AS `D`
+JOIN `courses` AS `C`
+ON `D`.`id` = `C`.`degree_id`
+JOIN `course_teacher` AS `CT`
+ON `C`.`id` = `CT`.`course_id`
+JOIN `teachers` AS `T`
+ON `CT`.`teacher_id`=`T`.`id`  
